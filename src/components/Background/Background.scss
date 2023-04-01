@@ -1,0 +1,32 @@
+@import "../../global.scss";
+
+.video-container {
+  display: flex;
+
+  background-color: black;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: -22px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.64;
+
+  @include mobile {
+    opacity: 0.78;
+  }
+
+  &.light {
+    filter: invert(1);
+    opacity: 0.85;
+
+    @include mobile {
+      opacity: 0.85;
+    }
+  }
+}

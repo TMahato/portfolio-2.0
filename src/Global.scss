@@ -1,0 +1,38 @@
+// SCROLLBAR
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border: solid 8px transparent;
+  background-clip: content-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  overflow-x: hidden;
+  overflow-y: overlay;
+}
+
+body {
+  margin: 0px !important;
+}
+
+$width: 800px;
+
+@mixin mobile {
+  @media (min-height: 421px) {
+    @media (max-width: #{$width}) {
+      @content;
+    }
+  }
+}
