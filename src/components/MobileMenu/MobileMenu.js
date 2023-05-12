@@ -38,14 +38,21 @@ export default function MobileMenu({
         {/* MENU */}
         <MM_SC.MM_Wrapper className="mm-wrapper">
           {/* LOGO*/}
-          <MM_SC.MM_LogoContainer
+          {/* <MM_SC.MM_LogoContainer
             href="#home"
             onClick={() => setShowMobileMenu(false)}
           >
             <Logo />
-          </MM_SC.MM_LogoContainer>
+          </MM_SC.MM_LogoContainer> */}
           {/* PAGES */}
           <MM_SC.LinkContainer className="mm-pages">
+          <MM_SC.NavLink
+              className={`underline ${currentPage === "home" && "active"}`}
+              href="#home"
+              onClick={() => setShowMobileMenu(false)}
+            >
+              Home
+            </MM_SC.NavLink>
             <MM_SC.NavLink
               className={`underline ${currentPage === "about" && "active"}`}
               href="#about"
