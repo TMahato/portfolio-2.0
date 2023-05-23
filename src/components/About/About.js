@@ -37,7 +37,7 @@ export default function About() {
             to bringing out solutions to complex problems.
           </AboutSC.AboutInfo>
           <AboutSC.AboutLWT>&gt;
-            <a href="https://drive.google.com/file/d/156dKbMA1b_Z6pzqq1viyaAM1WLfH_G6z/view" style={{color: "#E9B32A", textDecoration: "none", fontSize: "1.7rem"}}> RESUME(click here for resume)</a> 
+            <a href="https://drive.google.com/file/d/156dKbMA1b_Z6pzqq1viyaAM1WLfH_G6z/view" style={{color: "#E9B32A", textDecoration: "none", fontSize: "1.7rem"}}> RESUME(click for resume)</a> 
           </AboutSC.AboutLWT>
 
         </AboutSC.AboutRight>
